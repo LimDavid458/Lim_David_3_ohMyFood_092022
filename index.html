@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- import typography-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <title>ohmyfood</title>
 </head>
 <body>
     <header>
-        <img src="images/ohmyfood.png" alt="logo ohmyfood" width="100px">
+        <img  src="public/images/ohmyfood.png" alt="logo ohmyfood" >
     </header>
     
     <section class="description">
-        <div>
+        <div class="description__location">
             <i class="fa-solid fa-location-dot"></i>
             <h2>Paris, Belleville</h2>
         </div>
-        <div>
+        <div class="description__website">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <button class="btn">Explorer nos restaurants</button>
         </div>
        
     </section>

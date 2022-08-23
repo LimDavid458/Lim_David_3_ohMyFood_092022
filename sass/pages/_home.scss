@@ -1,0 +1,23 @@
+.description
+{
+    text-align: center;
+    background-color: lighten(#F2F2F2, 2%) ;
+    &__location{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        background-color: #F2F2F2;
+        
+        h2{
+            margin: 15px;
+            font-weight: 500;
+        }
+    }
+    &__website{
+        margin: 35px;
+        .btn{
+            margin-top: 20px;
+        }
+    }
+
+}
