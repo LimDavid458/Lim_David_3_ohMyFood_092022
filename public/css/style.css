@@ -1,60 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 8 |     background: linear-gradient($colour-secondary,$colour-primary) ;
+ *   |                                 ^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\components\_buttons.scss 8:33  @use
+ *   sass\components\_index.scss 1:1     @use
+ *   sass\index.scss 5:1                 root stylesheet */
 
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 8 \2502      background: linear-gradient($colour-secondary,$colour-primary) ;\d\a   \2502                                  ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\components\\_buttons.scss 8:33  @use\a   sass\\components\\_index.scss 1:1     @use\a   sass\\index.scss 5:1                 root stylesheet";
 }
-
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.btn {
-  padding: 15px;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-
-header {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-header img {
-  width: 150px;
-}
-
-.description {
-  text-align: center;
-  background-color: #f7f7f7;
-  padding-bottom: 20px;
-}
-.description__location {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  background-color: #F2F2F2;
-}
-.description__location h2 {
-  margin: 15px;
-  font-weight: 500;
-}
-.description__website {
-  margin: 35px;
-}
-.description__website .btn {
-  margin-top: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
