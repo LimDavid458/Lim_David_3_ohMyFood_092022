@@ -1,4 +1,13 @@
-.main-wrapper
+@use "../utils" as *;
+.function
 {
-    margin:50px 20px 100px 20px;
+    @include space;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.restaurant
+{
+    padding-top: 80px;
+    background-color: $colour-fond;
 }

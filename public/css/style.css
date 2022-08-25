@@ -29,8 +29,16 @@ header img {
   width: 150px;
 }
 
-.main-wrapper {
-  margin: 50px 20px 100px 20px;
+.function {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.restaurant {
+  padding-top: 80px;
+  background-color: #eaeaea;
 }
 
 .btn {
@@ -54,6 +62,7 @@ header img {
   box-shadow: 0px 3px 6px 2px #e8e8e8;
 }
 
+/*add card description + info  */
 .description {
   text-align: center;
   background-color: #f6f6f6;
@@ -64,6 +73,7 @@ header img {
   align-items: baseline;
   justify-content: center;
   background-color: #eaeaea;
+  position: relative;
 }
 .description__location .input-basic {
   margin: 15px;
@@ -74,8 +84,18 @@ header img {
 .description__location .input-basic:focus-visible {
   outline: none;
 }
+.description__location .description--shadow {
+  background: linear-gradient(#d1d1d1, #eaeaea);
+  height: 5px;
+  position: absolute;
+  width: 100%;
+}
 .description__website {
   margin: 40px;
+}
+.description__website h1 {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .description__website .btn {
   margin-top: 20px;
@@ -89,6 +109,12 @@ header img {
 }
 .container-card__position {
   position: relative;
+}
+.container-card__position:hover {
+  background-color: #f5edff;
+}
+.container-card__position:hover .icon-description {
+  color: #9356DC;
 }
 .container-card__position .circle {
   width: 25px;
