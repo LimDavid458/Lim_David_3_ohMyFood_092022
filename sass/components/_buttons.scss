@@ -1,6 +1,7 @@
-
+@use "../utils" as *;
 .btn
-{
+{   
+   
     padding: 15px;
     border-radius: 25px;
     border: none;

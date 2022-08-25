@@ -1,24 +1,46 @@
 .description
 {
     text-align: center;
-    background-color: lighten(#F2F2F2, 2%) ;
-    padding-bottom: 20px;
+    background-color: #f6f6f6 ;
+    padding-bottom: 25px;
     &__location{
         display: flex;
         align-items: baseline;
         justify-content: center;
-        background-color: #F2F2F2;
-        
+        background-color: #eaeaea;
+        box-shadow: inset 0 2px 1.5px 0px rgba(162, 162, 162, 0.5);
         h2{
             margin: 15px;
             font-weight: 500;
         }
     }
     &__website{
-        margin: 35px;
+        margin: 40px;
         .btn{
             margin-top: 20px;
         }
     }
+
+}
+
+.main-wrapper
+{
+    margin:50px 20px 100px 20px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__card{ 
+        padding: 15px;
+        display: flex;
+        align-items: baseline;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        
+    }
+    
 
 }
