@@ -76,4 +76,31 @@
     }
 }
 
+.resto
+{
+    padding-top: 80px;
+    background-color: $colour-fond;
+    &__title{
+        @include space;
+        margin-bottom: 30px
+    }
+    &__container{
+        @include space;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+        .resto-card{
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column; 
+            background-color: $colour-primary;            
+            &__image{
+                height: 250px;
+                border-radius: 30px 30px 0px 0px;
+            }
+        }
+    }
 
+  
+}
