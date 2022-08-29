@@ -7,5 +7,5 @@
     border: none;
     color: white;
     background: linear-gradient($colour-secondary,$colour-primary) ;
-    @include shadow;
+    @include shadow(10%);
 }

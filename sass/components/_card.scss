@@ -6,10 +6,10 @@
     align-items: baseline;
     background-color: #f6f6f6;
     border-radius: 20px;
-    text-decoration: none;
-    color: black;
     gap: 20px;
+    cursor: pointer;
     @include shadow;
+
 }
 
 /*add card description + info  */
