@@ -1,9 +1,11 @@
-@use "../utils" as *;
-.function
-{
+@use "../base" as *;
+
+.function{
+
     @include space;
     margin-top: 50px;
     margin-bottom: 80px;
+    
 }
 
 

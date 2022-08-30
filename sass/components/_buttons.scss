@@ -1,11 +1,14 @@
-@use "../utils" as *;
+@use "../base" as *;
 
-.btn
-{   
-    padding: 15px;
+.btn{   
+
+    padding: 15px 20px;
     border-radius: 25px;
+    font-weight: 500;
     border: none;
     color: white;
-    background: linear-gradient($colour-secondary,$colour-primary) ;
+    background: linear-gradient($color-secondary,$color-primary) ;
     @include shadow(10%);
+    cursor: pointer;
+    
 }
