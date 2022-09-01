@@ -63,11 +63,12 @@
 
     padding-top: 40px;
     background-color: $color-fond;
+    padding-bottom: 80px;
 
     &__title{
 
         @include space;
-        margin-bottom: 25px
+        margin-bottom: 25px;
 
     }
 

@@ -80,7 +80,23 @@
         border-radius: 15px;
         text-decoration: none;
         color: black; 
-        @include shadow(5%);  
+        @include shadow(5%);
+        position: relative;
+        
+        &__sticker{
+
+            position: absolute;
+            right: 10px ;
+            height: 30px;
+            width: 80px;
+            background-color: $color-tertiary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: darken($color-tertiary, 40%);
+            border-radius: 5px;
+            
+        }
 
         &__image{
 
@@ -89,9 +105,13 @@
             object-fit: cover;
 
         }
+
         &__description{   
 
             margin-left: 15px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
 
             h2{
 
@@ -101,14 +121,25 @@
 
             p{
 
-                margin-top: 5px;
+                margin-top: 2px;
 
             }
 
-           
-            .fa-heart:hover {
-                animation: heart 800ms ease forwards;
-            }
+           .fa-heart{
+
+                margin-right: 20px;
+                font-weight: 300;
+                &:hover{
+
+                    animation: heart 800ms ease forwards;
+
+                }
+
+           }
+
+            // .fa-heart:hover {
+            //     animation: heart 800ms ease forwards;
+            // }
             
             @keyframes heart {
                 0% {

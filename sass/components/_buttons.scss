@@ -10,5 +10,12 @@
     background: linear-gradient($color-secondary,$color-primary) ;
     @include shadow(10%);
     cursor: pointer;
+
+    &:hover{
+
+        background: linear-gradient($color-secondary,lighten($color-primary,3%)) ;
+
+    }
+    
     
 }
