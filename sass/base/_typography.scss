@@ -1,8 +1,14 @@
+@use "./mixins" as *;
+
 body{
 
     font-family: "Roboto",sans-serif;
     font-size: 14px;
     font-weight: 300;
+    @include desktop-only{
+
+        font-size: 16px;
+    }
 
 }
 
@@ -11,6 +17,11 @@ h1{
     font-family: "Roboto",sans-serif;
     font-size: 20px;
     font-weight: 700;
+    @include desktop-only{
+
+        font-size: 22px;
+
+    }
 
 }
 
@@ -19,6 +30,11 @@ h2{
     font-family: "Roboto",sans-serif;
     font-size: 16px;
     font-weight: 500;
+    @include desktop-only{
+
+        font-size: 18px;
+
+    }
     
 }
 
@@ -27,5 +43,10 @@ h3{
     font-family: "Roboto",sans-serif;
     font-size: 14px;
     font-weight: 500;
+    @include desktop-only{
+
+        font-size: 16px;
+        
+    }
 
 }
