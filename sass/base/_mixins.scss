@@ -1,8 +1,8 @@
 @use "./variables" as *;
 
-@mixin shadow($dark:$shadow-nuance){
+@mixin shadow($dark:$shadow-nuance,$display:$shadow-display){
 
-    box-shadow: 0px 3px 6px 2px darken($color-fond,$dark);
+    box-shadow: 0px 3px 6px $display darken($color-fond,$dark);
 
 }
 
@@ -23,5 +23,17 @@
     
 }
 
+@mixin delay-transition {
+    
+    @for $var from 1 through $anim-num {
+        &--#{$var}{
+
+            animation-delay: $anim-delay * $var;
+
+        }
+        
+    }
+    
+}
 
 

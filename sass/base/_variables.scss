@@ -4,6 +4,11 @@ $color-tertiary:#99E2D0;
 $color-fond:#eaeaea;
 
 $shadow-nuance:2%;
+$shadow-display: 2px;
+
+$anim-duration:500ms;
+$anim-num:5;
+$anim-delay: $anim-duration / $anim-num;
 
 $breakpoint:(
 

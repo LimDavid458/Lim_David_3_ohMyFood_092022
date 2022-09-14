@@ -1,0 +1,56 @@
+@use "../base" as *;
+
+.menu{
+
+    background-color: $color-fond;
+    position: relative;
+    border-radius: 50px 50px 0px 0px;
+    top:-60px;
+    margin-bottom: -55px;
+
+    .title-menu{
+
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+        @include space;
+        
+        h1{
+
+            margin: 0;
+            font-family:"Shrikhand" ;
+            padding-top: 30px;
+            font-size: 26px;
+
+        }
+        
+    }
+
+    .starter{
+
+        @include space;
+        margin-top: 35px;
+
+        h2{
+
+            position: relative;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            &::before{
+
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 40px;
+                background-color: $color-tertiary;
+                bottom: -5px;    
+
+            }
+
+        }
+        
+    }
+
+}

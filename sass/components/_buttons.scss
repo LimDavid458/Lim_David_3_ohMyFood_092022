@@ -14,8 +14,77 @@
     &:hover{
 
         background: linear-gradient($color-secondary,lighten($color-primary,3%)) ;
+        @include shadow(10%,5px);
+
+    } 
+    
+}
+
+
+.fa-heart{
+
+    margin-right: 20px;
+    font-weight: 300;
+    &:hover{
+
+        animation: heart 800ms ease forwards;
 
     }
-    
-    
+
+}
+
+@keyframes heart {
+
+    0% {
+
+        font-weight: 800;
+        background: linear-gradient($color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+        opacity: 0.1;
+
+    }  
+ 
+    100% {
+
+        font-weight: 800;
+        background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    } 
+
+}
+
+.heart-menu{
+
+    font-size: 20px;
+
+}
+
+.arrow-ruturn{
+
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    left:30px;
+    font-size: 20px;
+
+}
+
+.btn-menu-container{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    .btn-menu{
+
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 60px;
+
+    }
+
 }
