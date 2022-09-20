@@ -250,6 +250,10 @@
             transform: scaleX(1);
             width: 30%;
 
+            @include desktop-only{
+                width: 10%;
+            }
+
             .fa-circle-check{
 
                 transform:  translateX(0) rotate(360deg);

@@ -354,6 +354,11 @@ footer ul li a {
   transform: scaleX(1);
   width: 30%;
 }
+@media screen and (min-width: 992px) {
+  .container-menu .card-menu:hover > .transition-right {
+    width: 10%;
+  }
+}
 .container-menu .card-menu:hover > .transition-right .fa-circle-check {
   transform: translateX(0) rotate(360deg);
 }
