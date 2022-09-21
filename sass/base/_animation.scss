@@ -1,0 +1,94 @@
+@use "./variables" as *;
+
+@keyframes spin-rotate {
+
+    0%{
+
+        transform: rotate(0deg);
+        
+    }
+    100%{
+
+        transform: rotate(360deg);
+        
+    }
+    
+}
+
+@keyframes fondu-transition {
+
+    0%{
+
+        opacity: 1;
+
+    }
+    100%{
+
+        opacity: 0;
+        z-index: -1;
+
+    }
+    
+}
+
+
+@keyframes heart {
+
+    0% {
+
+        font-weight: 800;
+        background: linear-gradient($color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+        opacity: 0.1;
+
+    }  
+ 
+    100% {
+
+        font-weight: 800;
+        background: linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    } 
+
+}
+
+@keyframes forward{
+
+    0%{
+
+      transform:translateY(10%);
+      opacity:0;
+
+    }
+    25%{
+
+      transform:translateY(8%);
+
+    }
+    75%{
+
+      transform:translateY(1%);
+      
+
+    }
+
+}
+
+@keyframes icone-rotate{
+
+    0%{
+
+        transform: rotate(0deg);
+        
+    }
+    100%{
+
+        transform:rotate(360deg);
+        
+
+    }
+
+}

@@ -25,34 +25,12 @@
 
     margin-right: 20px;
     font-weight: 300;
+    font-size: 18px;
     &:hover{
 
         animation: heart 800ms ease forwards;
 
     }
-
-}
-
-@keyframes heart {
-
-    0% {
-
-        font-weight: 800;
-        background: linear-gradient($color-primary,$color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;   
-        opacity: 0.1;
-
-    }  
- 
-    100% {
-
-        font-weight: 800;
-        background: linear-gradient($color-primary, $color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-    } 
 
 }
 
@@ -69,13 +47,15 @@
     cursor: pointer;
     position: absolute;
     left:30px;
-    font-size: 20px;
+    top:20px;
+    font-size: 22px;
+    color: black;
 
 }
 
 .btn-menu-container{
 
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 
@@ -83,7 +63,7 @@
 
         padding-left: 50px;
         padding-right: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
 
     }
 
