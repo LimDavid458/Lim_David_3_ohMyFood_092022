@@ -7,7 +7,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   body {
     font-size: 16px;
   }
@@ -18,7 +18,7 @@ h1 {
   font-size: 20px;
   font-weight: 700;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   h1 {
     font-size: 22px;
   }
@@ -29,7 +29,7 @@ h2 {
   font-size: 16px;
   font-weight: 600;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   h2 {
     font-size: 18px;
   }
@@ -209,7 +209,7 @@ footer ul li a {
   gap: 30px;
   margin: 30px 0px 0 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .step-card {
     flex-direction: row;
   }
@@ -251,7 +251,7 @@ footer ul li a {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .resto__container {
     flex-direction: row;
   }
@@ -302,7 +302,7 @@ footer ul li a {
   flex-direction: column;
   gap: 15px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .container-menu {
     flex-direction: row;
   }
@@ -337,7 +337,7 @@ footer ul li a {
 .container-menu .card-menu--5 {
   animation-delay: 500ms;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .container-menu .card-menu {
     flex-basis: 100%;
   }
@@ -387,7 +387,7 @@ footer ul li a {
 .container-menu .card-menu:hover > .transition-right {
   flex-basis: 90px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1280px) {
   .container-menu .card-menu:hover > .transition-right {
     flex-basis: 100px;
   }
