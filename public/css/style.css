@@ -315,9 +315,8 @@ footer ul li a {
   gap: 0;
   padding: 0;
   background-color: white;
-  height: 60px;
+  flex: 1;
   border-radius: 15px;
-  text-indent: 10px;
   align-items: flex-end;
   animation: forward 500ms ease-in-out both;
   transform-origin: bottom;
@@ -344,6 +343,7 @@ footer ul li a {
 }
 .container-menu .card-menu__description {
   margin-bottom: 10px;
+  margin-left: 10px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -353,6 +353,11 @@ footer ul li a {
 }
 .container-menu .card-menu__description h3 {
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .container-menu .card-menu__description br {
+    display: none;
+  }
 }
 .container-menu .card-menu__description p {
   margin: 5px 0px 0px;
@@ -365,7 +370,6 @@ footer ul li a {
   margin-right: 20px;
 }
 .container-menu .card-menu .transition-right {
-  height: 100%;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -379,6 +383,7 @@ footer ul li a {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 0;
+  align-self: normal;
 }
 .container-menu .card-menu .transition-right .fa-circle-check {
   color: white;

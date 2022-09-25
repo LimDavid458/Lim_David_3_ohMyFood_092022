@@ -23,6 +23,16 @@
     
 }
 
+@mixin tablette-only {
+
+    @media screen and (min-width: map-get($breakpoint,tablette)) {
+        
+        @content;
+
+    }
+    
+}
+
 @mixin delay-transition {
     
     @for $var from 1 through $anim-num {
