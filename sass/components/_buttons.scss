@@ -26,12 +26,23 @@
     margin-right: 20px;
     font-weight: 300;
     font-size: 22px;
-    &:hover{
+    cursor: pointer;
+
+    &:active{
 
         animation: heart 800ms ease forwards;
-
     }
+   
+    @include desktop-only{
 
+        &:hover{
+
+            animation: heart 800ms ease forwards;
+
+        }
+
+    } 
+ 
 }
 
 .arrow-ruturn{

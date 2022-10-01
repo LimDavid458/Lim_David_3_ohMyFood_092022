@@ -249,25 +249,34 @@
 
                 color: white;
                 font-size: 20px;
+            }
 
+        }
+        
+        &:active > .transition-right{
+
+            flex-basis: 90px;
+            
+            .fa-circle-check{
+
+                animation: icone-rotate 500ms ease-in-out;
+            
             }
 
         }
 
-        &:hover > .transition-right{
+        @include desktop-only{
 
-            flex-basis: 90px;
-                
-            @include desktop-only{
+            &:hover > .transition-right{
 
                 flex-basis: 100px;
-
-            }
-
-            .fa-circle-check{
-
-                animation: icone-rotate 500ms ease-in-out;
                 
+                .fa-circle-check{
+
+                    animation: icone-rotate 500ms ease-in-out;
+                
+                }
+
             }
 
         }

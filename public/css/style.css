@@ -165,9 +165,15 @@ footer ul li a {
   margin-right: 20px;
   font-weight: 300;
   font-size: 22px;
+  cursor: pointer;
 }
-.fa-heart:hover {
+.fa-heart:active {
   animation: heart 800ms ease forwards;
+}
+@media screen and (min-width: 1280px) {
+  .fa-heart:hover {
+    animation: heart 800ms ease forwards;
+  }
 }
 
 .arrow-ruturn {
@@ -389,16 +395,19 @@ footer ul li a {
   color: white;
   font-size: 20px;
 }
-.container-menu .card-menu:hover > .transition-right {
+.container-menu .card-menu:active > .transition-right {
   flex-basis: 90px;
+}
+.container-menu .card-menu:active > .transition-right .fa-circle-check {
+  animation: icone-rotate 500ms ease-in-out;
 }
 @media screen and (min-width: 1280px) {
   .container-menu .card-menu:hover > .transition-right {
     flex-basis: 100px;
   }
-}
-.container-menu .card-menu:hover > .transition-right .fa-circle-check {
-  animation: icone-rotate 500ms ease-in-out;
+  .container-menu .card-menu:hover > .transition-right .fa-circle-check {
+    animation: icone-rotate 500ms ease-in-out;
+  }
 }
 
 .img-responsive {
